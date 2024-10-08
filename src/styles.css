@@ -1,0 +1,110 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #3a3a3a, #2c2c2c); /* Darker background gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .App {
+    max-width: 450px;
+    padding: 40px;
+    background-color: #2f2f2f; /* Darker form background */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Darker and stronger shadow */
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .App:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* More shadow depth on hover */
+  }
+  
+  h1 {
+    color: #fff; /* White heading text */
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+  h2 {
+    color: #cccccc; /* Lighter gray subheading */
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    max-width: 380px;
+    padding: 14px;
+    font-size: 15px;
+    background-color: #444444; /* Darker input background */
+    border: 1px solid #666666; /* Border color matching the dark theme */
+    color: #fff; /* White text in input fields */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3); /* Darker inner shadow */
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    outline: none;
+    background-color: #555555; /* Slightly lighter on focus */
+    border-color: #00bfff; /* Bright blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 191, 255, 0.4); /* Soft blue focus shadow */
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder {
+    color: #aaaaaa; /* Lighter gray for placeholder text */
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #007bff; /* Darker blue button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 123, 255, 0.3); /* Deeper button shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.35); /* Slightly stronger hover shadow */
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  input[type="submit"]:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 123, 255, 0.25);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .App {
+      max-width: 90%;
+      padding: 30px;
+    }
+    input[type="text"],
+    input[type="email"] {
+      max-width: 100%;
+    }
+  }
+  
